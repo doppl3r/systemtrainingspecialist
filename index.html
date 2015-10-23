@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Varitec Solutions</title>
-		<meta name="description" content="sabre">
+		<title>Climatec</title>
+		<meta name="description" content="climatec">
 		<meta name="author" content="jacob debenedetto">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="css/normalize.css">
@@ -12,38 +12,67 @@
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico' />
 	</head>
-	<body style="display:none; background-color: #222326; overflow-x:hidden;">
+	<body>
         <!--include page elemnts-->
-        <nav></nav>
-        <div class="header1"></div>
-        <section class="carousel about-carousel" id="continue"></section>
-        <footer></footer>
+        <div class="header" style="background-image: url('img/security-building.jpg');">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>systems</h1>
+                        <h1>training</h1>
+                        <h1>specialties</h1>
+                        <img class="logo" src="img/climatec-logo.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Customized Support</h2>
+                        <p>Climatec values our customers and strives to create operational excellence in all we do. The System Training Specialist supports the job embedded, professional learning of staff on the effective deployment and use of various healthcare solutions. Additionally, customized     follow-up training can be created to meet the unique learning needs of our clientele. Our training specialist will be involved in all aspects of the installation of your new devices. From the initial meetings to construction, our trainer will be there to address your facilities unique needs.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/graphic-1.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <h2>Climatec Assistance & Product Training </h2>
+                        <ul>
+                            <li>Systems Training Specialist is involved in all planning aspects to ensure your unique training needs are met </li>
+                            <li>Device training and education</li>
+                            <li>Pre-installation training</li>
+                            <li>Post implementation follow-up training</li>
+                            <li>Reporting support to identify training targets and close implementation gaps</li>
+                            <li>On-site presentation support </li>
+                            <li>Day-to-day support through webinars and training videos</li>
+                            <li>Access to training specialist support before, during, and after device implementation</li>
+                            <li>Customized follow up training support, upon request</li>
+                        </ul>
+                        <img src="img/climatec-logo-gray.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         
         <!--construct pages with js-->
 		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="js/jquery.cookie.js"></script>
         <script type="text/javascript" src="js/functions.js"></script>
 		<script>
             //Load content
             $(document).ready(function () {
-                $('nav').load('nav.html');
-                $('.header1').load('header1.html');
-                $('.about-carousel').load('about-carousel.html');
-                $('footer').load('footer.html');
-                $('body').fadeIn(2000);
                 
-                $(function() {
-                    var COOKIE_NAME = 'splash-page-cookie';
-                    $go = $.cookie(COOKIE_NAME);
-                    if ($go == null) {
-                        $.cookie(COOKIE_NAME, 'test', { path: '/', expires: 6 });
-                        window.location = window.location.pathname.replace(/[^\\\/]*$/, '') + "visitor.html";
-                    }
-                    else {
-                    }
-                });
             });
 		</script>
 	</body>
