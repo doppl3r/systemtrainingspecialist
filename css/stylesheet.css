@@ -37,8 +37,8 @@ img.zoom-out:hover { -webkit-transform:scale(0.75); -moz-transform:scale(0.75); 
     .header h1 { font-size: 64px; line-height: 38px; }
     .header img.logo { height: 48px; }
     .content { padding: 48px 16px; }
-    .content h2 { font-size: 24px; }
-    .content p, .content ul { font-size: 14px; line-height: 24px; }
+    .content h2 { font-size: 24px; text-align: center }
+    .content p { text-align: center; }
     .content .row img { display: block; max-width: 75%; margin: 0 auto; }
 }
 @media(max-width:480px){ /*mobile*/
